@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munetjiwowo Group Trading CC</title>
+  <style>
+    /* Basic Reset */
+    * {margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+    body {scroll-behavior:smooth;background:#f8f9fa;color:#222;}
+
+    /* Navigation */
+    nav {
+      position:fixed;top:0;width:100%;background:#003366;
+      padding:1rem;display:flex;justify-content:space-between;
+      align-items:center;color:#fff;z-index:1000;
+    }
+    nav .logo {font-size:1.2rem;font-weight:bold;}
+    nav ul {display:flex;list-style:none;gap:1.5rem;}
+    nav ul li a {color:#fff;text-decoration:none;font-weight:600;}
+    nav ul li a:hover {color:#ffd700;}
+
+    /* Hero Section */
+    .hero {
+      height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+      background:linear-gradient(to right, #003366, #0066cc);color:#fff;text-align:center;padding:2rem;
+    }
+    .hero h1 {font-size:2.5rem;margin-bottom:1rem;}
+    .hero p {font-size:1.2rem;margin-bottom:2rem;}
+    .btn {
+      background:#ffd700;color:#003366;padding:0.7rem 1.5rem;
+      border:none;border-radius:5px;font-weight:bold;cursor:pointer;text-decoration:none;
+    }
+    .btn:hover {background:#ffcc00;}
+
+    /* Section Styles */
+    section {padding:5rem 2rem;}
+    section h2 {text-align:center;font-size:2rem;margin-bottom:2rem;color:#003366;}
+
+    /* Forex & Investment Section */
+    .packages {
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:1rem;
+    }
+    .package {
+      border:1px solid #ddd;border-radius:10px;padding:1rem;background:#fff;text-align:center;
+    }
+    .package h3 {margin-bottom:0.5rem;color:#0066cc;}
+    .package p {font-size:0.9rem;margin-bottom:1rem;}
+    .package .btn {background:#003366;color:#fff;}
+
+    /* Perfumes Section */
+    .products {
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+      gap:1rem;
+    }
+    .product {
+      background:#fff;border:1px solid #ddd;border-radius:10px;padding:1rem;text-align:center;
+    }
+    .product img {width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:0.5rem;}
+    .product h4 {font-size:1rem;margin-bottom:0.3rem;}
+    .product .btn {background:#0066cc;color:#fff;}
+
+    /* Contact/Order Section */
+    .contact-form {
+      max-width:500px;margin:0 auto;background:#fff;padding:2rem;border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact-form input, .contact-form textarea {
+      width:100%;padding:0.7rem;margin-bottom:1rem;border:1px solid #ccc;border-radius:5px;
+    }
+    .contact-form button {width:100%;}
+
+    /* Footer */
+    footer {
+      text-align:center;padding:1rem;background:#003366;color:#fff;font-size:0.9rem;
+    }
+
+    /* Responsive fix for nav */
+    @media(max-width:768px){
+      nav ul {flex-direction:column;gap:0.5rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Munetjiwowo Group</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#forex">Forex & Investments</a></li>
+      <li><a href="#perfumes">Fragrances</a></li>
+      <li><a href="#contact">Order/Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Munetjiwowo Group Trading CC</h1>
+    <p>Where Forex Meets Fragrance</p>
+    <a href="#forex" class="btn">Explore Our Services</a>
+  </section>
+
+  <!-- Forex & Investments Section -->
+  <section id="forex">
+    <h2>Forex Signals & Investments</h2>
+    <div class="packages">
+      <div class="package">
+        <h3>Signal Package 1</h3>
+        <p>Daily signals with 70% accuracy. Best for beginners.</p>
+        <a href="#contact" class="btn">Order Now</a>
+      </div>
+      <div class="package">
+        <h3>Signal Package 2</h3>
+        <p>Advanced signals + trade analysis for pros.</p>
+        <a href="#contact" class="btn">Order Now</a>
+      </div>
+      <div class="package">
+        <h3>Investment Plan A</h3>
+        <p>Low-risk plan with steady growth potential.</p>
+        <a href="#contact" class="btn">Join Now</a>
+      </div>
+      <div class="package">
+        <h3>Investment Plan B</h3>
+        <p>Moderate-risk plan for higher potential returns.</p>
+        <a href="#contact" class="btn">Join Now</a>
+      </div>
+      <div class="package">
+        <h3>VIP Signal Package</h3>
+        <p>Exclusive insights and premium signal service.</p>
+        <a href="#contact" class="btn">Order Now</a>
+      </div>
+      <div class="package">
+        <h3>Custom Investment Plan</h3>
+        <p>Tailored to your goals and risk appetite.</p>
+        <a href="#contact" class="btn">Join Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fragrances Section -->
+  <section id="perfumes">
+    <h2>Fragrances & Perfumes</h2>
+    <div class="products">
+    </div>
+  </section>
+
+  <!-- Contact/Order Section -->
+  <section id="contact">
+    <h2>Order / Contact Us</h2>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Order or Inquiry" required></textarea>
+        <button type="submit" class="btn">Send Order</button>
+      </form>
+      <p style="text-align:center;margin-top:1rem;">
+        Or <a href="https://wa.me/264818356575" style="color:#0066cc;">Chat with us on WhatsApp</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Munetjiwowo Group Trading CC - All Rights Reserved
+  </footer>
+
+  <!-- JS for Perfume placeholders -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const perfumeSection = document.querySelector('.products');
+      perfumeSection.innerHTML = "";
+      for (let i = 1; i <= 20; i++) {
+        perfumeSection.innerHTML += `
+          <div class="product">
+            <img src="https://via.placeholder.com/150?text=Perfume+${i}" alt="Perfume ${i}">
+            <h4>Perfume Brand ${i}</h4>
+            <p>Luxury fragrance, 50ml</p>
+            <a href="https://wa.me/264818356575?text=I'm%20interested%20in%20Perfume%20Brand%20${i}" class="btn">Order via WhatsApp</a>
+          </div>`;
+      }
+    });
+  </script>
+
+</body>
+</html>
